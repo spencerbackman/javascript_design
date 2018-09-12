@@ -52,12 +52,40 @@
 
 // console.log(countPositivesSumNegatives([1,2,3,4,5,0,-3,-5]))
 
-function neg(n) {
-  if(n < 0) {
-    return n;
-  } else {
-    return -n;
-  }
+// function neg(n) {
+//   if(n < 0) {
+//     return n;
+//   } else {
+//     return -n;
+//   }
+// }
+
+// console.log(neg(5))
+
+// function sum(n){
+//   var total = 0;
+//   for(var i = n; i > 0; i--){
+//     total = total + i;
+//   }
+//   return total
+// }
+
+// console.log(sum(8))
+
+// function repeatStr (n, s) {
+//   var res = '';
+//   for(var i = 0; i < n; i++) {
+//     res += s;
+//   }
+//   return res;
+// }
+
+// console.log(repeatStr(5,'i'))
+
+function catOrHuman(legs){
+  var cat = Math.floor(legs / 4);
+  var human = Math.floor(legs / 2);
+  return [cat, human]
 }
 
-console.log(neg(5))
+console.log(catOrHuman(6))
