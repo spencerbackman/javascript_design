@@ -82,10 +82,13 @@
 
 // console.log(repeatStr(5,'i'))
 
-function catOrHuman(legs){
-  var cat = Math.floor(legs / 4);
-  var human = Math.floor(legs / 2);
-  return [cat, human]
-}
+// function catOrHuman(legs){
+//   var cat = Math.floor(legs / 4);
+//   var human = Math.floor(legs / 2);
+//   return [cat, human]
+// }
 
-console.log(catOrHuman(6))
+// console.log(catOrHuman(6))
+
+['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
