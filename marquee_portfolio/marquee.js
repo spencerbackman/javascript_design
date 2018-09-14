@@ -14,13 +14,13 @@ var marqueeVars = {
 
 $(document).ready(function(){
     marqueeGatherData();
-})
+});
 
 function marqueeGatherData(){
     $('.marquee_data .marquee_panel').each(function(index){
         marqueeVars.totalPanels = index + 1;
-        var panel_image_l = $(this).attr('data-image') + '_l.jpg';
-        var panel_image_s = $(this).attr('data-image') + '_s.jpg';
+        var panel_image_l = $(this).attr('data-image') + '_large.png';
+        var panel_image_s = $(this).attr('data-image') + '_small.png';
         var panel_caption = $(this).html();
         marqueeVars.panelContent(index) = 
         '<div class="marquee_panel" data-image-s="'+panel_image_s+'" style="background-image:url('+panel_image_l+');"><div class="overlay"><div class="panel_caption">'+panel_caption+'</div></div></div>';    
@@ -101,3 +101,5 @@ function marqueeMultiPanel(){
     });
     $('.marquee_nav div:first').trigger('click');
 }
+
+document.getElementById('test').append(marqueeVars)
